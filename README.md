@@ -4,7 +4,7 @@
 
 This is the source code of the NIU Speech and Debate team's website. It was originally created by Lucas Edwards.
 
-The custom bootstrap
+The custom bootstrapc compliled css is located in css/main.min.css
 
 ## Setup
 
