@@ -1,0 +1,17 @@
+//custom variables
+$primary: #1b1b1b;
+$secondary: #a50000;
+
+
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+$custom-theme-colors: (
+    "niured": #d20000,
+    "darkred": #a50000
+);
+
+
+
+//import bootsrap so we can override it
+@import '../node_modules/bootstrap/scss/bootstrap.scss'
