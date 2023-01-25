@@ -7,11 +7,11 @@ $secondary: #a50000;
 @import '../node_modules/bootstrap/scss/variables';
 
 $custom-theme-colors: (
-    "niured": #d20000,
+    "niured": #e03030,
     "darkred": #a50000
 );
 
-
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
 //import bootsrap so we can override it
 @import '../node_modules/bootstrap/scss/bootstrap.scss'

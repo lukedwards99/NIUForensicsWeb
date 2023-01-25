@@ -10,46 +10,50 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="col-12 col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <strong>*** TEST ENVIORMENT NOT MEANT FOR PRODUCTION USE *** </strong>
+                <div style="display: inline;">
+                    Screen size:
+                    <span class="d-inline d-sm-none ">Xtra-Small (xs)</span>
+                    <span class="d-none d-sm-inline d-md-none ">Small (sm)</span>
+                    <span class="d-none d-md-inline d-lg-none">Medium (md)</span>
+                    <span class="d-none d-lg-inline d-xl-none">Large (lg)</span>
+                    <span class="d-none d-xl-inline d-xxl-none">X-Large (xl)</span>
+                    <span class="d-none d-xxl-inline ">XX-Large (xxl)</span>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="container-fluid bg-niured">
+            <div class="row">
+                <div class="col-5">
+                    <h2 class="h2 text-light">NIU Forensics</h2>
+                </div>
+            </div>
+                <div class="">
+                    <ul class="nav justify-content-center">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link text-light active" aria-current="page" href="#">Our History</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                            <a class="nav-link text-light" href="#">Event Resources</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
+                            <a class="nav-link text-light" href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
-        </nav>
+
+        </div>
     </header>
 
-    <a class="btn btn-primary">Test Button</a>
+    <main>
+
+
+    </main>
+
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2022 - NIU Forensics
