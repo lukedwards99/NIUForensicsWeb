@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NIU Speech and Debate</title>
     <link rel="stylesheet" href="css/main.min.css" />
+    <style>
+        /* .slideshow {
+            height: max-content;
+        } */
+    </style>
 </head>
 
 <body>
@@ -31,26 +36,89 @@
                     <h2 class="h2 text-light">NIU Forensics</h2>
                 </div>
             </div>
-                <div class="">
-                    <ul class="nav justify-content-center">
-                        <li class="nav-item">
-                            <a class="nav-link text-light active" aria-current="page" href="#">Our History</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Event Resources</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-light active" aria-current="page" href="#">Our History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Event Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Contact</a>
+                    </li>
+                </ul>
             </div>
+        </div>
 
         </div>
     </header>
 
     <main>
+        
+        <!-- Carousel -->
+        <div class="container-fluid m-2">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-md-10">
+                    <div id="team-slideshow" class="carousel slide" data-bs-ride="carousel">
 
+                        <!-- Indicators/dots -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#team-slideshow" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#team-slideshow" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#team-slideshow" data-bs-slide-to="2"></button>
+                            <button type="button" data-bs-target="#team-slideshow" data-bs-slide-to="3"></button>
+                            <button type="button" data-bs-target="#team-slideshow" data-bs-slide-to="4"></button>
+                        </div>
+
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/state2022.jpg" alt="NIU Forenics at State" class="d-block w-100">
+                                <div class="carousel-caption">
+                                    <h3>Welcome to NIU Speech and Debate!</h3>
+                                    <p>Welcome to NIU Speech and Debate!. NIU Speech and Debate has a long and rich history of competitive success both in the state and nationally as well.</p>
+                                  </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/hallway.jpg" alt="" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/iifa2020.jpg" alt="" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/NFA2022.jpg" alt="" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/xmas2021.jpg" alt="" class="d-block w-100">
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#team-slideshow" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#team-slideshow" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END Carousel -->
+
+        <!-- About Section  -->
+
+        <div class="container">
+            <h2 class="text-center text-niured">What is Speech and Debate?</h2>
+            
+            <div class="row justify-content-center align-items-center mx-lg-5">
+                <div class="col-lg">Column</div>
+                <div class="col-lg">Column</div>
+            </div>
+        </div>
+
+        <!-- END About Section -->
 
     </main>
 
