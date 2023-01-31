@@ -32,3 +32,9 @@ Since this is a static website with no need for server renderer we don't keep th
 The video tutorial used for set up can be found [here](https://youtu.be/nCX3QVl_PiI).
 
 [W3Schools](https://www.w3schools.com/bootstrap5/) has great tutorials for Bootstrap in general.
+
+## Facebook Plugin
+
+Details on how the Facebook Page join button can be found [here](https://developers.facebook.com/docs/plugins/group-plugin#).
+
+Luke Edwards' Developer account was used.
