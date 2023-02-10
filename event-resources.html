@@ -62,26 +62,36 @@
     </header>
 
     <main>
-        
-        <div class="container">
+
+        <div class="container pt-4">
             <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-8">
+                <div class="col-md-6 col-lg-7">
                     <p class="text-center text-dark">
                         There are 11 AFA events that are often referred to as “speech” or “individual events.”
-                        There are also 2 debate events, Parliamentary Debate and International Public Form Debate or IPDA.
+                        There are also 2 debate events, Parliamentary Debate and International Public Form Debate or
+                        IPDA.
                         Videos for every event can be found here on this page.
-                        <br>
+                        <br><br>
                         For additional information on different events consult these resources:
                     </p>
                     <p class="text-center">
                         <a href="#" class="text-niured">Google Drive</a>
-                        <a href="#" class="text-niured">AFA Rules</a>
-                        <a href="#" class="text-niured">NFA Rules</a>
+                        <a href="https://sites.google.com/site/afanietnew2/products-services/event-descriptions"
+                            class="text-niured">AFA Rules</a>
+                        <a href="https://nationalforensicassociation.org/competition/" class="text-niured">NFA Rules</a>
+                    </p>
+
+                    <p class="text-muted text-center">
+                        The descriptions here are adapted from the AFA event description which can be found
+                        <a href="https://sites.google.com/site/afanietnew2/products-services/event-descriptions"
+                            class="text-muted">here</a>
+                        <br>
+                        The example videos here are complied from past NIU student performance, NSDA final rounds, NFA
+                        final rounds, and AFA final rounds.
                     </p>
                 </div>
             </div>
         </div>
-
         <div class="container mt-2">
             <div class="row justify-content-center">
                 <div class="col-auto">
@@ -97,16 +107,15 @@
             </div>
         </div>
 
-        
+
 
         <div class="container" id="speech-content">
             <div class="row">
                 <div class="col-md-6">
-                    
+
                 </div>
-                
                 <div class="col-md-6">
-                    
+
                 </div>
             </div>
         </div>
@@ -134,7 +143,7 @@
             document.getElementById("speech-content").classList = "container";
             document.getElementById("debate-content").classList = "container d-none";
         });
-        
+
         document.getElementById("debatebtn").addEventListener("click", (e) => {
             document.getElementById("speechbtn").classList = "btn btn-outline-niured";
             document.getElementById("debatebtn").classList = "btn btn-niured";
