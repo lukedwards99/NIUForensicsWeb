@@ -297,12 +297,14 @@
                     <h3 class="text-center">Impromptu Speaking (IMP/IS)</h3>
                     <ul class="nav nav-pills nav-fill" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link active m-1" id="imp-1" data-bs-toggle="tab" data-bs-target="#imp-1-pane"
-                                type="button" role="tab" aria-controls="imp-1-pane" aria-selected="true">1</button>
+                            <button class="nav-link active m-1 fw-bolder" id="imp-1" data-bs-toggle="tab"
+                                data-bs-target="#imp-1-pane" type="button" role="tab" aria-controls="imp-1-pane"
+                                aria-selected="true">1</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link m-1" id="imp-2" data-bs-toggle="tab" data-bs-target="#imp-2-pane"
-                                type="button" role="tab" aria-controls="imp-2-pane" aria-selected="false">2</button>
+                            <button class="nav-link m-1 fw-bolder" id="imp-2" data-bs-toggle="tab"
+                                data-bs-target="#imp-2-pane" type="button" role="tab" aria-controls="imp-2-pane"
+                                aria-selected="false">2</button>
                         </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
@@ -346,21 +348,76 @@
                     </p>
                 </div>
             </div>
+            <p class="text-muted text-center">
+                The descriptions here are adapted from the AFA event description which can be found
+                <a href="https://sites.google.com/site/afanietnew2/products-services/event-descriptions"
+                    class="text-muted">here</a>
+                <br>
+                The example videos here are complied from past NIU student performance, NSDA final rounds, NFA
+                final rounds, and AFA final rounds.
+            </p>
         </div>
-
 
         <div class="container d-none" id="debate-content">
-            debate
+            <h2 class="text-niured text-center">Debate Events</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <p class="w-100">
+                        Debate unlike speech involves the clashing of two opposing views at the same time. Both debate
+                        events we participate in are limited preparation like the extemp and impromptu events. Topics
+                        for each debate are decided by a strike process anywhere between 15-30 minutes before the round
+                        starts. To practice for debate the team has weekly practice sessions where teammates debate each
+                        other. Topics in debate can range from silly like, “This house believes TikTok is better than
+                        Vine” to more serious, “This house believes that capital punishment is moral” and everything in
+                        between. More detailed information on rules and procedures in each event than can be found here 
+                        can be found in the
+                        <a href="#debate-practice-packet" class="text-niured">debate practice packet</a>.
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h3 class="text-center">Parliamentary Debate (Parli)</h3>
+                    <div class="d-flex justify-content-center">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/NLdbXnC8st0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p>
+                        Parliamentary debate is a two versus two debate that lasts from 45 minutes to an hour. This form
+                        of debate focuses more on debate technique and terminology than delivery style. Each team has 15
+                        minutes after strike to create their case. This form of debate has its roots in British
+                        Parliamentary procedure with some adaptations.
+                    </p>
+                    <a href="https://en.wikipedia.org/wiki/Parliamentary_debate" class="btn btn-sm btn-niured">Full Rules</a>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="text-center">IPDA</h3>
+                    <div class="d-flex justify-content-center">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/NLdbXnC8st0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p>
+                        IPDA is a one versus one debate that lasts around 30 minutes. This form of debate focuses more
+                        on delivery style than it does on debate technique and terminology. Each debater has 20-30
+                        minutes, depending on the tournament, to create their case. This form of debate is meant to
+                        better simulate real life debate scenarios where both argumentation and delivery are considered.
+                    </p>
+                    <a href="https://iifa.us/ipda-cheat-sheet.html" class="btn btn-sm btn-niured">Full Rules</a>
+                </div>
+            </div>
+            <div class="row justify-content-center" id="debate-practice-packet">
+                <h2 class="text-center text-niured p-3">Debate Practice Packet</h3>
+                <div class="col-md-8">
+                    <iframe src="pdf/Debate-Practice-Packet.pdf" height="900" width="100%"></iframe>
+                </div>
+            </div>
         </div>
-
-        <p class="text-muted text-center">
-            The descriptions here are adapted from the AFA event description which can be found
-            <a href="https://sites.google.com/site/afanietnew2/products-services/event-descriptions"
-                class="text-muted">here</a>
-            <br>
-            The example videos here are complied from past NIU student performance, NSDA final rounds, NFA
-            final rounds, and AFA final rounds.
-        </p>
 
         <p class="text-muted text-center">
             Last Updated 2/13/23
@@ -377,15 +434,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-
-        document.getElementById("speechbtn").addEventListener("click", (e) => {
+        //handles switching between speech and debate tabs
+        document.getElementById("speechbtn").addEventListener("click", () => {
             document.getElementById("speechbtn").classList = "btn btn-niured";
             document.getElementById("debatebtn").classList = "btn btn-outline-niured";
             document.getElementById("speech-content").classList = "container";
             document.getElementById("debate-content").classList = "container d-none";
         });
 
-        document.getElementById("debatebtn").addEventListener("click", (e) => {
+        document.getElementById("debatebtn").addEventListener("click", () => {
             document.getElementById("speechbtn").classList = "btn btn-outline-niured";
             document.getElementById("debatebtn").classList = "btn btn-niured";
             document.getElementById("speech-content").classList = "container d-none";
